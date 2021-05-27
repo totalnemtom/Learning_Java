@@ -7,8 +7,7 @@ public class First {
         String result = censor("a barom nagyon aranyos barom", "barom", "***");
         System.out.println(result);
 
-        EnglishMan secondHumanWhoIsEnglish = new EnglishMan();
-        secondHumanWhoIsEnglish.setName("Lajos");
+        EnglishMan secondHumanWhoIsEnglish = new EnglishMan("Lajos", 20);
 
         String isSecondHumanHasName = secondHumanWhoIsEnglish.printName();
 

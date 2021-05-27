@@ -2,6 +2,11 @@ package com.example.first;
 
 public class EnglishMan extends Human implements ModernHuman {
 
+
+    public EnglishMan(String name, int age) {
+        super(name, age);
+    }
+
     String englishSpeaking(){
 
         return "I can speak English";
