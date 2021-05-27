@@ -7,15 +7,15 @@ public class First {
         String result = censor("a barom nagyon aranyos barom", "barom", "***");
         System.out.println(result);
 
-        Human firstHuman = new Human();
-        Human secondHumanWhoIsEnglish = new EnglishMan();
+        EnglishMan secondHumanWhoIsEnglish = new EnglishMan();
         secondHumanWhoIsEnglish.setName("Lajos");
 
-        String isFristHumanHasName = firstHuman.printName();
         String isSecondHumanHasName = secondHumanWhoIsEnglish.printName();
 
-        System.out.println(isFristHumanHasName);
         System.out.println(isSecondHumanHasName);
+        System.out.println(secondHumanWhoIsEnglish.englishSpeaking());
+        System.out.println(secondHumanWhoIsEnglish.useComputer());
+
 
     }
 

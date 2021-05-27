@@ -1,6 +1,6 @@
 package com.example.first;
 
-public class Human {
+public abstract class Human {
     private String name;
     private int age;
 

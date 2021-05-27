@@ -1,8 +1,15 @@
 package com.example.first;
 
-public class EnglishMan extends Human {
+public class EnglishMan extends Human implements ModernHuman {
 
-    public String englishSpeaking(){
+    String englishSpeaking(){
+
         return "I can speak English";
+    }
+
+    public String useComputer(){
+
+        return "Modern human can use computer";
+
     }
 }
