@@ -1,5 +1,6 @@
 package com.example.first;
 
+
 public class First {
 
     public static void main(String[] args) {
@@ -7,15 +8,18 @@ public class First {
         System.out.println(result);
 
         Human firstHuman = new Human();
-        Human secondHuman = new Human();
+        Human secondHumanWhoIsEnglish = new EnglishMan();
+        secondHumanWhoIsEnglish.setName("Lajos");
 
-        firstHuman.setName("Gyula");
-        System.out.println(firstHuman.printName());
-        System.out.println(secondHuman.printName());
+        String isFristHumanHasName = firstHuman.printName();
+        String isSecondHumanHasName = secondHumanWhoIsEnglish.printName();
+
+        System.out.println(isFristHumanHasName);
+        System.out.println(isSecondHumanHasName);
 
     }
 
-    static String censor(String txt, String toChange, String newWord){
+    static String censor( String txt, String toChange, String newWord){
         String toReturn = txt.replaceAll(toChange,newWord);
 
         return toReturn;
